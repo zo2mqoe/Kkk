@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Roblox Cookie Login Extension",
+    "version": "1.1.0",
+    "description": "Extension สำหรับช่วยล็อกอินเข้าสู่ระบบ Roblox ด้วยค่า .ROBLOSECURITY",
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": "image.png"
+    },
+    "host_permissions": [
+        "https://*.roblox.com/*",
+        "https://web.roblox.com/*"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "scripting", 
+        "activeTab", 
+        "cookies", 
+        "tabs"
+    ]
+}
